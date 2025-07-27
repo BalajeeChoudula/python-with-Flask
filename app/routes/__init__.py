@@ -1,3 +1,5 @@
 from app.routes.home import home
 from app.routes.contact import contact
-routes = [home, contact]
+from app.routes.aboutus import aboutus
+
+routes = [home, contact, aboutus]
