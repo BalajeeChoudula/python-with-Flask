@@ -1,0 +1,45 @@
+/* components/header.css */
+
+.header {
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header__title {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}
+
+.header__nav {
+  margin-top: 10px;
+}
+
+.header__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-item {
+  position: relative;
+  padding: 0 15px;
+}
+
+.header__menu-item:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  color: #ccc;
+  font-weight: normal;
+}
+
+.header__menu-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease
